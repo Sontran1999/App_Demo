@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_baseline_search_24"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="ifRoom|collapseActionView"
+        tools:ignore="MenuTitle" />
+
+    <item
+        android:id="@+id/menu_sort"
+        android:icon="@drawable/ic_baseline_sort_24"
+        android:orderInCategory="101"
+        app:showAsAction="always"
+        tools:ignore="MenuTitle">
+        <menu>
+            <item
+                android:id="@+id/menu_sort1"
+                android:orderInCategory="101"
+                android:title="A -> Z"
+                app:showAsAction="never"
+                tools:ignore="MenuTitle" />
+            <item
+                android:id="@+id/menu_sort2"
+                android:orderInCategory="101"
+                android:title="Z -> A"
+                app:showAsAction="never"
+                tools:ignore="MenuTitle" />
+            <item
+                android:id="@+id/menu_sort3"
+                android:orderInCategory="101"
+                android:title="ID"
+                app:showAsAction="never"
+                tools:ignore="MenuTitle" />
+        </menu>
+    </item>
+</menu>
